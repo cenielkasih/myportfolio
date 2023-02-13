@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900;300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/solid.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"/>
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing:border-box;
+        }
+
+        .container {
+            width:100%;
+            height:100%;
+        }
+
+        /*header*/
+        .container .header {
+            background: url(bg.jpg);
+            background-repeat:no-repeat;
+            background-size:100% 700px;
+            color:#fff;
+        }
+
+        .container .header .nav {
+            width:90%;
+            margin:0px auto 50px auto;
+            padding:25px 0px;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            text-shadow:2px 2px #000;
+        }
+
+        .container .header .nav .menu ul li {
+            list-style:none;
+            display:inline;
+            margin-right:20px;
+        }
+
+        .container .header .nav .menu ul li a {
+            text-decoration:none;
+            color:#fff;
+            text-shadow:2px 2px #000;
+        }
+
+        .container .header .nav .nama h2 {
+            letter-spacing: 2px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .container .header .jumbo {
+            width:90%;
+            height:400px;
+            display:flex;
+            margin:0 auto;
+            align-items:center;
+        }
+
+        .container .header .jumbo .kata h1 {
+            text-shadow:2px 2px #000;
+            font-weight:900;
+            font-size:45px;
+        }
+
+        .container .header .jumbo .kata p {
+            text-shadow:2px 2px #000;
+            letter-spacing: 2px;
+        }
+        /*header*/
+
+        /*aboutme*/
+        .container .about {
+            width:90%;
+            height:100%;
+            color:#000;
+            margin:100px auto 0px auto;
+        }
+
+        .container .about h1 {
+            text-align:center;
+            font-weight:300;
+            margin-bottom:50px;
+        }
+
+        .container .about .flex {
+            display:flex;
+            align-items: center;
+        }
+
+        .container .about .flex img {
+            width:400px;
+            height:400px;
+            border-radius:5px;
+        }
+
+        .container .about .flex .gambar {
+            width:50%;
+        }
+
+        .container .about .flex .kata {
+            width:40%;
+        }
+
+        .container .about .flex .kata p {
+            margin-top:10px;
+            margin-bottom:20px;
+        }
+
+        .container .about .kata h2 {
+            font-weight:300;
+        }
+
+        .container .about .kata button {
+            padding:10px 30px;
+            background:#333;
+            border:none;
+            color:#fff;
+            border-radius:5px;
+        }
+        /*aboutme*/
+
+        /*portfolio*/
+        .container .port {
+            width:90%;
+            height:100%;
+            margin:100px auto 0px auto;
+        }
+        .container .port h1 {
+            font-weight:300;
+            text-align:center;
+            margin-bottom:20px;
+        }
+
+        .container .port .portfolio .gambar {
+            display:flex;
+        }
+
+        .container .port .portfolio .gambar .gambar1 {
+            margin:0 auto;
+            width:390px;
+            height:370px;
+        }
+
+        .container .port .portfolio .gambar .gambar1 img {
+            border-radius: 5px;
+            width:100%;
+            height:100%;
+        }
+        
+        /*portfolio*/
+
+        /*kontak*/
+        .container .kontak {
+            width:90%;
+            height:100%;
+            color:#000;
+            margin:100px auto 50px auto;
+        }
+
+        .container .kontak h1 {
+            text-align:center;
+            margin-bottom:30px;
+            font-weight:300;
+        }
+
+        .container .kontak .konten {
+            display:flex;
+            margin:0 auto;
+            justify-content: space-between;
+        }
+
+        .container .kontak .konten .kata {
+            width:40%;
+        }
+
+        .container .kontak .konten .kontaknya {
+            width:50%;
+        }
+
+        .container .kontak .konten .kata h2 {
+            margin-bottom:20px;
+        }
+
+        .container .kontak .konten .kata .fa-instagram,
+        .container .kontak .konten .kata .fa-envelope {
+            font-size:20px;
+            margin-right:20px;
+        }
+
+        .container .kontak .konten .kata ul li {
+            list-style:none;
+        }
+
+        .container .kontak .konten .kata ul li a {
+            display:inline-block;
+            margin-bottom:10px;
+            text-decoration: none;
+            color:#000;
+        }
+
+        .container .kontak .konten .kata p {
+            margin-bottom:25px;
+        }
+
+        .container .kontak .kontaknya h2 {
+            margin-bottom:20px;
+        }
+
+        .container .kontak .kontaknya input {
+            padding:10px;
+            display:block;
+            width:100%;
+            height:35px;
+            margin:0px 0px 10px 0px;
+        }
+
+        .container .kontak .kontaknya textarea {
+            display:block;
+            width:100%;
+            height:80px;
+            resize:none;
+            padding:10px;
+            margin-bottom:20px;
+        }
+
+        .container .kontak .kontaknya button {
+            padding:10px 30px;
+            background:#333;
+            color:#fff;
+            border:none;
+            border-radius:5px;
+        }
+
+        .container .f {
+            display:flex;
+            justify-content:center;
+        }
+        /*kontak*/
+    </style>
+</head>
+<body>
+    <div class="container" id="home">
+        <!--Header-->
+        <div class="header">
+            <div class="nav">
+                <div class="nama">
+                    <h2>Ceniel Kasih</h2>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#kontak">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="jumbo">
+                <div class="kata">
+                    <h1>Ceniel Kasih Stevani</h1>
+                    <p>Mahasiswi Teknik Informatika | STMIK ADHI GUNA</p>
+                </div>
+            </div>
+        </div>
+        <!--Header-->
+        <!--About-->
+        <div class="about" id="about">
+            <h1>About Me</h1>
+            <div class="flex">
+                <div class="gambar">
+                    <img src="cn.jpeg">
+                </div>
+                <div class="kata">
+                    <h2>Hi, I'm Ceniel Kasih Stevani.</h2>
+                    <p>Student at Adhi Guna Palu School of Informatics and Computer Management. I was born in Palu, Indonesia. and has 3 brother</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <!--About-->
+        <!--Portfolio-->
+        <div class="port" id="portfolio">
+            <h1>Portfolio</h1>
+            <div class="portfolio">
+                <div class="gambar">
+                    <div class="gambar1">
+                        <img src="banner.jpeg">
+                    </div>
+                    <div class="gambar1">
+                        <img src="pmk.jpg">
+                    </div>
+                    <div class="gambar1">
+                        <img src="ceniel27.jpeg">
+                    </div>
+                    <div class="gambar1">
+                        <img src="sma.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f">
+            <div class="ff"> 
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/Rtrnhr-sKjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+            </div>
+            <div class="ff"> 
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/Rtrnhr-sKjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--Portfolio-->
+        <!--Kontak-->
+        <div class="kontak">
+            <h1>Contact Me</h1>
+            <div class="konten">
+                <div class="kata">
+                    <h2>Thanks a lot for checking out my portfolio website</h2>
+                    <p>You can greet me by filing out the form beside. I will definitely reply for you, Thank you!</p>
+                    <ul>
+                        <li><a href="https://instagram.com/cenihhhh" target="_blank"><i class="fa-brands fa-instagram"></i>cenihhhh</a></li>
+                        <li><a href="mailto:kasihtebisi@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>kasihtebisi@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="kontaknya" id="kontak">
+                    <h2>Message Me</h2>
+                    <form action="#" method="post">
+                        <input type="text" name="text" placeholder="Nama">
+                        <input type="number" name="number" placeholder="No Telp">
+                        <input type="email" name="email" placeholder="Email">
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+          <div class="row bg-primary text-light text-center"> 
+            <div class="f">
+                <p>
+                    Copyright 2023 - Ceniel Kasih Stevani
+                </p>
+            </div>
+          </div>
+        <!--Kontak-->
+    </div>
+</body>
+</html>
